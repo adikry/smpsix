@@ -15,6 +15,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KefoController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
+use Spatie\Sitemap\SitemapGenerator;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,11 @@ Route::get('/profil/guru', [HomeController::class, 'guru']);
 Route::get('/profil/staff', [HomeController::class, 'staff']);
 Route::get('/profil/struktur-organisasi', [HomeController::class, 'struktur']);
 Route::get('/kontak', [HomeController::class, 'kontak']);
+
+Route::get('/sitemap', function() {
+    SitemapGenerator::create('http://127.0.0.1:8000/')->writeToFile('public/sitemap.xml');
+    return "Success";
+});
 
 
 Route::get('/linagar', [ArtikelController::class, 'index']);

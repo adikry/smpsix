@@ -1,4 +1,11 @@
-@extends('layout.frontend.main')
+@extends('layout.frontend.main', [
+    'title' => "Struktur Organisasi - SMPN 6 Garut"
+])
+
+@push('canonical')
+    <link rel="canonical" href="https://smpn6garut.com/" />
+@endpush
+
 @section('container')
 <nav style="--bs-breadcrumb-divider: '>';" class="pt-5 mt-3" aria-label="breadcrumb">
     <div class="container">

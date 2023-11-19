@@ -1,4 +1,10 @@
-@extends('layout.frontend.main')
+@extends('layout.frontend.main', [
+    'title' => 'SMPN 6 Garut - Membangun Sekolah yang Literat'
+])
+
+@push('canonical')
+    <link rel="canonical" href="https://smpn6garut.com/" />
+@endpush
 
 @section('container')
 <main>

@@ -1,4 +1,11 @@
-@extends('layout.frontend.main')
+@extends('layout.frontend.main', [
+    'title' => 'KEFO - SMPN 6 Garut'
+])
+
+@push('canonical')
+    <link rel="canonical" href="https://smpn6garut.com/kefo" />
+@endpush
+
 @section('container')
 <section class="news-section section-padding">
     <div class="container">

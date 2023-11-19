@@ -1,4 +1,9 @@
-@extends('layout.frontend.main')
+@extends('layout.frontend.main', [
+    'title' => 'Kefo - SMPN 6 Garut'
+])
+@push('canonical')
+<link rel="canonical" href="{{ url()->current() }}" />
+@endpush
 @push('css')
 <link rel="stylesheet" href="/assets/vendors/fancybox/jquery.fancybox.min.css">
 @endpush
@@ -14,6 +19,9 @@
 <meta property="og:image:height" content="275">
 <meta property="og:image:type" content="image/jpeg">
 @endpush
+
+
+
 @section('container')
 <section class="news-section section-padding pt-5 mt-3">
     <div class="container">

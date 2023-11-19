@@ -1,4 +1,10 @@
-@extends('layout.frontend.main')
+@extends('layout.frontend.main', [
+    'title' => 'Linagar - SMPN 6 Garut'
+])
+
+@push('canonical')
+    <link rel="canonical" href="{{ url()->current() }}" />
+@endpush
 
 @push('head')
 <meta name="twitter:card" content="summary">
@@ -12,6 +18,7 @@
 <meta property="og:image:height" content="275">
 <meta property="og:image:type" content="image/jpeg">
 @endpush
+{{-- @dd(url()->current()) --}}
 
 @section('container')
 <section class="news-section section-padding pt-5 mt-3">

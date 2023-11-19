@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>Signin Template · Bootstrap v5.2</title>
+    <meta name="author" content="">
+    <title>Login Admin - SMPN 6 Garut</title>
     <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <style>

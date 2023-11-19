@@ -20,6 +20,7 @@ class ArtikelFactory extends Factory
                 ->map(fn ($p) => "<p>$p</p>")
                 ->implode(''),
             'user_id' => mt_rand(1, 3),
+            'penulis' => $this->faker->name(),
             'kategori_id' => mt_rand(1, 6),
         ];
     }

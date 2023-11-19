@@ -32,11 +32,6 @@ class Artikel extends Model
             });
         });
 
-        // $query->when($filters['penulis'] ?? false, function ($query, $penulis) {
-        //     return $query->where(function ($query) use ($penulis) {
-        //         $query->where('penulis', $penulis);
-        //     });
-        // });
     }
 
     public function publisher()

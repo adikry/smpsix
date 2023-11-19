@@ -48,8 +48,8 @@ class DatabaseSeeder extends Seeder
         //     'slug' => 'gulis'
         // ]);
 
-        Artikel::factory(25)->create();
-        // Guru::factory(16)->create();
+        // Artikel::factory(25)->create();
+        Guru::factory(16)->create();
         // User::create([
         //     'nama' => 'Mohamad Dikry',
         //     'username' => 'Masiya',
@@ -59,6 +59,6 @@ class DatabaseSeeder extends Seeder
 
         // Guru::factory(18)->create();
 
-        // Staff::factory(10)->create();
+        Staff::factory(10)->create();
     }
 }

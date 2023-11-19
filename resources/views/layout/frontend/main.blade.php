@@ -14,9 +14,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    @stack('canonical')
 
-
-    <title>SMP Negeri 6 Garut</title>
+    <title>{{ $title }}</title>
 
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/adminLTE/plugins/fontawesome-free/css/all.min.css">

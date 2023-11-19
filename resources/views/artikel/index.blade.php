@@ -1,5 +1,13 @@
-@extends('layout.frontend.main')
+@extends('layout.frontend.main', [
+    'title' => 'Linagar - SMPN 6 Garut'
+])
+
+@push('canonical')
+    <link rel="canonical" href="https://smpn6garut.com/linagar" />
+@endpush
+
 @section('container')
+{{-- @dd(url()->current()) --}}
 <section class="news-section section-padding">
     <div class="container">
         <div class="row">
